@@ -33,14 +33,14 @@ declare interface MapProps {
   onMapReady?: () => void;
 }
 
-declare interface Ride {
+declare interface Lift {
   origin_address: string;
   destination_address: string;
   origin_latitude: number;
   origin_longitude: number;
   destination_latitude: number;
   destination_longitude: number;
-  ride_time: number;
+  lift_time: number;
   fare_price: number;
   payment_status: string;
   driver_id: number;

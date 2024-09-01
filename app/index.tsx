@@ -8,5 +8,4 @@ export default function Home() {
   }
 
   return <Redirect href="/(auth)/welcome" />;
-};
-
+}
