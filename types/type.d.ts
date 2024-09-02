@@ -94,7 +94,7 @@ declare interface PaymentProps {
   email: string;
   amount: string;
   driverId: number;
-  rideTime: number;
+  liftTime: number;
 }
 
 declare interface LocationStore {

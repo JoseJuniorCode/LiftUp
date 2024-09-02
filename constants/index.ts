@@ -74,23 +74,23 @@ export const icons = {
 export const onboarding = [
   {
     id: 1,
-    title: "Effortless Transportation Awaits!!",
+    title: "Lift to Your Destination with Ease!",
     description:
-      "Hop on with ease and get where you need to be with just a tap. Ryde makes every journey simple and seamless.",
+      "Experience effortless travel with our lifts. Your smooth journey is just a tap away.",
     image: images.onboarding1,
   },
   {
     id: 2,
-    title: "Your Ideal Ride is Ready",
+    title: "Your Perfect Lift is Just a Tap Away",
     description:
-      "Say goodbye to long waits and hello to instant rides. Discover the perfect car for your needs with Ryde",
+      "No more long waits. Instantly find your ideal lift and get to your destination quickly.",
     image: images.onboarding2,
   },
   {
     id: 3,
-    title: "Ride Your Way, Anytime, Anywhere!",
+    title: "Lift Anytime, Anywhere!",
     description:
-      "From booking to arrival, enjoy a personalized ride experience. Just enter your destination and relax..",
+      "Enter your destination, enjoy a comfortable lift, and relax. Our service makes every journey easy and personalized.",
     image: images.onboarding3,
   },
 ];

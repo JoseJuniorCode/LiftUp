@@ -10,7 +10,7 @@ import { GestureHandlerRootView } from "react-native-gesture-handler";
 import Map from "@/components/Map";
 import { icons } from "@/constants";
 
-const RideLayout = ({
+export default function LiftLayout({
   title,
   snapPoints,
   children,
@@ -18,7 +18,7 @@ const RideLayout = ({
   title: string;
   snapPoints?: string[];
   children: React.ReactNode;
-}) => {
+}) {
   const bottomSheetRef = useRef<BottomSheet>(null);
 
   return (
@@ -71,6 +71,4 @@ const RideLayout = ({
       </View>
     </GestureHandlerRootView>
   );
-};
-
-export default RideLayout;
+}

@@ -11,7 +11,7 @@ import {
 
 import { InputFieldProps } from "@/types/type";
 
-const InputField = ({
+export default function InputField({
   label,
   icon,
   secureTextEntry = false,
@@ -21,7 +21,7 @@ const InputField = ({
   iconStyle,
   className,
   ...props
-}: InputFieldProps) => {
+}: InputFieldProps) {
   return (
     <KeyboardAvoidingView
       behavior={Platform.OS === "ios" ? "padding" : "height"}
@@ -47,6 +47,4 @@ const InputField = ({
       </TouchableWithoutFeedback>
     </KeyboardAvoidingView>
   );
-};
-
-export default InputField;
+}

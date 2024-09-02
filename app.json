@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "RideOn",
-    "slug": "rideOn",
+    "name": "Hailo",
+    "slug": "hailo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -10,7 +10,7 @@
     "splash": {
       "image": "./assets/images/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#2f80ed"
+      "backgroundColor": "#FF3131"
     },
     "ios": {
       "supportsTablet": true
@@ -30,7 +30,7 @@
       [
         "expo-router",
         {
-          "origin": "https://rideOn.com/"
+          "origin": "https://lift.com/"
         }
       ]
     ],

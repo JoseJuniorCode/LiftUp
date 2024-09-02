@@ -11,13 +11,13 @@ import { fetchAPI } from "@/lib/fetch";
 import { useLocationStore } from "@/store";
 import { PaymentProps } from "@/types/type";
 
-const Payment = ({
+export default function Payment({
   fullName,
   email,
   amount,
   driverId,
-  rideTime,
-}: PaymentProps) => {
+  liftTime,
+}: PaymentProps) {
   const { initPaymentSheet, presentPaymentSheet } = useStripe();
   const {
     userAddress,
@@ -53,7 +53,7 @@ const Payment = ({
         },
         confirmHandler: async (
           paymentMethod,
-          shouldSavePaymentMethod,
+          _shouldSavePaymentMethod,
           intentCreationCallback,
         ) => {
           const { paymentIntent, customer } = await fetchAPI(
@@ -87,7 +87,7 @@ const Payment = ({
             });
 
             if (result.client_secret) {
-              await fetchAPI("/(api)/ride/create", {
+              await fetchAPI("/(api)/lift/create", {
                 method: "POST",
                 headers: {
                   "Content-Type": "application/json",
@@ -99,7 +99,7 @@ const Payment = ({
                   origin_longitude: userLongitude,
                   destination_latitude: destinationLatitude,
                   destination_longitude: destinationLongitude,
-                  ride_time: rideTime.toFixed(0),
+                  lift_time: liftTime.toFixed(0),
                   fare_price: parseInt(amount) * 100,
                   payment_status: "paid",
                   driver_id: driverId,
@@ -114,7 +114,7 @@ const Payment = ({
           }
         },
       },
-      returnURL: "myapp://book-ride",
+      returnURL: "myapp://book-lift",
     });
 
     if (!error) {
@@ -125,7 +125,7 @@ const Payment = ({
   return (
     <>
       <CustomButton
-        title="Confirm Ride"
+        title="Confirm Lift"
         className="my-10"
         onPress={openPaymentSheet}
       />
@@ -158,6 +158,4 @@ const Payment = ({
       </ReactNativeModal>
     </>
   );
-};
-
-export default Payment;
+}

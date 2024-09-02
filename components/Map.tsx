@@ -15,7 +15,7 @@ import { Driver, MarkerData } from "@/types/type";
 
 const directionsAPI = process.env.EXPO_PUBLIC_DIRECTIONS_API_KEY;
 
-const Map = () => {
+export default function Map() {
   const {
     userLongitude,
     userLatitude,
@@ -133,6 +133,4 @@ const Map = () => {
       )}
     </MapView>
   );
-};
-
-export default Map;
+}

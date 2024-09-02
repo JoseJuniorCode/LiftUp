@@ -14,12 +14,12 @@ export async function POST(request: Request) {
 
     const response = await sql`
       INSERT INTO users (
-        name, 
-        email, 
+        name,
+        email,
         clerk_id
-      ) 
+      )
       VALUES (
-        ${name}, 
+        ${name},
         ${email},
         ${clerkId}
      );`;

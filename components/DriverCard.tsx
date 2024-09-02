@@ -5,7 +5,11 @@ import { icons } from "@/constants";
 import { formatTime } from "@/lib/utils";
 import { DriverCardProps } from "@/types/type";
 
-const DriverCard = ({ item, selected, setSelected }: DriverCardProps) => {
+export default function DriverCard({
+  item,
+  selected,
+  setSelected,
+}: DriverCardProps) {
   return (
     <TouchableOpacity
       onPress={setSelected}
@@ -61,6 +65,4 @@ const DriverCard = ({ item, selected, setSelected }: DriverCardProps) => {
       />
     </TouchableOpacity>
   );
-};
-
-export default DriverCard;
+}

@@ -10,14 +10,18 @@ const TabIcon = ({
   focused: boolean;
 }) => (
   <View
-    className={`flex flex-row justify-center items-center rounded-full ${focused ? "bg-warning-300" : ""}`}
+    className={`flex flex-row justify-center items-center rounded-full ${
+      focused ? "bg-danger-200" : ""
+    }`}
   >
     <View
-      className={`rounded-full w-12 h-12 items-center justify-center ${focused ? "bg-warning-400" : ""}`}
+      className={`rounded-full w-12 h-12 items-center justify-center ${
+        focused ? "bg-danger-600" : ""
+      }`}
     >
       <Image
         source={source}
-        tintColor="white  "
+        style={{ tintColor: "white" }}
         resizeMode="contain"
         className="w-7 h-7"
       />
@@ -36,7 +40,7 @@ export default function Layout() {
         tabBarStyle: {
           backgroundColor: "#333333",
           borderRadius: 50,
-          paddingBottom: 0, // ios only
+          paddingBottom: 0, // iOS only
           overflow: "hidden",
           marginHorizontal: 20,
           marginBottom: 20,
@@ -60,7 +64,7 @@ export default function Layout() {
         }}
       />
       <Tabs.Screen
-        name="rides"
+        name="lifts"
         options={{
           title: "History",
           headerShown: false,
