@@ -1,50 +1,53 @@
-# Welcome to your Expo app 👋
+# Welcome to LiftUp app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+# 🤖 Introduction
+LiftUp is a state-of-the-art mobile app crafted using React Native for a dynamic and intuitive user interface. It integrates Google Maps for precise map rendering and navigation, Stripe for seamless and secure payment processing, and serverless Postgres for robust and scalable database management. Styled with TailwindCSS, LiftUp not only delivers a visually appealing experience but also sets a new standard in mobile app development.
 
-## Get started
+The primary aim of LiftUp is to showcase the full-stack development process, demonstrating advanced skills in building comprehensive mobile applications. This app serves as a testament to the developer's expertise, creating a memorable and impactful user experience.
 
-1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+# ⚙️Tech Stack
+React Native
+Expo
+Stripe
+PostgreSQL
+Google Maps
+zustand
+Clerk
+Tailwind CSS
 
-2. Start the app
 
-   ```bash
-    npx expo start
-   ```
+# 🔋Features
 
-In the output, you'll find options to open the app in a
+👉 Onboarding Flow: Enjoy a seamless registration and setup process to get started quickly.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+👉 Email and Password Authentication with Verification: Securely log in with email verification for added security.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+👉 OAuth Using Google: Effortlessly log in using your Google credentials for a quick and secure access.
 
-## Get a fresh project
+👉 Authorization: Manage secure access control for various user roles and permissions.
 
-When you're ready, run:
+👉 Home Screen with Live Location & Google Map: Track your current location in real-time with interactive map markers.
 
-```bash
-npm run reset-project
-```
+👉 Recent Lifts: Easily view a list of your most recent lifts at a glance.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+👉 Google Places Autocomplete: Search for any place on Earth with smart autocomplete suggestions.
 
-## Learn more
+👉 Find Lifts: Locate available lifts by entering your 'From' and 'To' locations.
 
-To learn more about developing your project with Expo, look at the following resources:
+👉 Select Lifts from Map: Choose from available lifts near you directly on the map.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+👉 Confirm Lift with Detailed Information: Review all details of your lift, including estimated time and fare price, before confirming.
 
-## Join the community
+👉 Pay for Lift Using Stripe: Conveniently make payments using various methods, including credit and debit cards.
 
-Join our community of developers creating universal apps.
+👉 Create Lifts After Successful Payment: Book your lift right after confirming payment for a hassle-free experience.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+👉 Profile: Manage your account details and preferences from the profile screen.
+
+👉 History: Review all your booked lifts to keep track of your travel history.
+
+👉 Responsive on Android and iOS: Optimized for a smooth experience across both Android and iOS devices.
+
+...and many more, including robust code architecture and enhanced reusability.
+
